@@ -109,6 +109,26 @@ a:active {
     border-radius: 10px;
 }
 
+.hero {
+    animation: popIn 0.6s ease-out;
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    70% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .section-2 {
     width: 70%;
     height: 40%;
@@ -167,36 +187,44 @@ a:active {
     margin: 20px 150px;
     width: 76%;
 }
+
 .card button {
-  animation: float 3s ease-in-out infinite;
+    animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
 
-  50% {
-    transform: translateY(-8px);
-  }
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
 }
- .card{
+
+.card {
     animation: popIn 0.99S ease-out;
- }
- @keyframes popIn {
-    0%{
+}
+
+@keyframes popIn {
+    0% {
         opacity: 0;
         transform: scale(0.8);
     }
-    75%{
+
+    75% {
         /* opacity: 0; */
         transform: scale(1.05);
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: scale(1);
     }
- }
+}
+
 .card {
     margin: 0px 10px;
     height: 400px;
@@ -279,4 +307,254 @@ button:hover {
     border-radius: 15px;
     margin-bottom: 30px;
     margin-top: 50px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        width: 90%;
+        margin: 0 auto;
+        gap: 20px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .hero {
+        width: 90%;
+        margin: 20px auto;
+        padding: 60px 40px;
+    }
+
+    .left {
+        width: 55%;
+    }
+
+    .left h2 {
+        font-size: 45px;
+    }
+
+    .section-2 {
+        width: 90%;
+        margin: 0 auto;
+        padding: 50px 30px;
+        gap: 30px;
+    }
+
+    .right img {
+        width: 350px;
+        margin-left: 0;
+    }
+
+    .cards {
+        width: 90%;
+        margin: 20px auto;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        width: 280px;
+    }
+
+    .review {
+        width: 90%;
+        height: auto;
+        margin: 50px auto;
+        flex-wrap: wrap;
+    }
+
+    .coffee img {
+        width: 350px;
+        height: 450px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    /* NAVIGATION */
+
+    nav {
+        width: 100%;
+        margin: 0;
+        padding: 20px 10px;
+        gap: 15px;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+        padding: 50px 25px;
+        background-position: center;
+    }
+
+    .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left h4 {
+        font-size: 14px;
+    }
+
+    .left h2 {
+        font-size: 38px;
+    }
+
+    .left p {
+        font-size: 14px;
+    }
+
+
+    /* SECTION 2 */
+
+    .section-2 {
+        width: 90%;
+        margin: 0 auto;
+        padding: 40px 10px;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .left-2 {
+        text-align: center;
+    }
+
+    .left-2 h2 {
+        font-size: 40px;
+    }
+
+    .left-2 p {
+        line-height: 1.6;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .right img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+    /* CARDS */
+
+    .cards {
+        width: 90%;
+        margin: 30px auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        min-height: 400px;
+    }
+
+    .cards img {
+        width: 150px;
+        height: 150px;
+    }
+
+
+    /* REVIEWS */
+
+    .review {
+        width: 90%;
+        height: auto;
+        margin: 50px auto;
+        flex-direction: column;
+    }
+
+    .rev {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .rev h3 {
+        font-size: 27px;
+    }
+
+    .rev p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .coffee {
+        width: 100%;
+        text-align: center;
+    }
+
+    .coffee img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 20px auto;
+    }
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 400px) {
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .left h2 {
+        font-size: 32px;
+    }
+
+    .left-2 h2 {
+        font-size: 32px;
+    }
+
+    .card {
+        max-width: 280px;
+    }
+
+    .card button {
+        padding: 12px 25px;
+    }
 }
