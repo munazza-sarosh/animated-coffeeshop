@@ -188,7 +188,7 @@ a:active {
     width: 76%;
 }
 
-.card button {
+ button {
     animation: float 3s ease-in-out infinite;
 }
 
@@ -200,7 +200,7 @@ a:active {
     }
 
     50% {
-        transform: translateY(-8px);
+        transform: translateY(-10px);
     }
 }
 
