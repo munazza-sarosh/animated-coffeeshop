@@ -4,85 +4,490 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Shop</title>
+    <title>Brew Haven | Artisanal Coffee &amp; Luxury Roastery</title>
+    <!-- Google Fonts for Luxury Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
-        <div class="logo"> Brew Haven </div>
-        <a href="#home">Home</a>
-        <a href="#why">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#Gallery">Gallery</a>
-        <a href="#Reviews">Reviews</a>
-        <a href="#contact">Contact us</a>
-    </nav>
-    <section class="hero">
-        <div class="left">
-            <h4 id="home">WELCOME TO OUR</h4>
-            <h2>FREE LUXURY <br> CAFE</h2>
-            <p> Start your day with rich aromas, handcrafted brews, and moments worth savoring. </p> <button>Order
-                Now</button>
-        </div>
-    </section>
-    <section class="section-2">
-        <div class="left-2">
-            <h2 id="why">Why Chooses <br> Us?</h2>
-            <p> At our coffee shop, every cup is crafted with passion using carefully selected premium coffee beans.From
-                rich espressos to creamy lattes, we are committed to delivering exceptional flavor and quality. Whether
-                you're starting your morning or taking a relaxing break, our cozy atmosphere and friendly service make
-                every visit a memorable experience. </p> <button>Visit Us</button>
-        </div>
-        <div class="right"> <img src="coffee2.jpg" alt=""> </div>
-    </section>
-    <section class="menu" id="menu">
-        <div class="cards">
-            <div class="card">
-                <img src="espresso.jpg" alt="">
-                <h3>Espresso</h3>
-                <p>Rich and aromatic coffee made from premium beans.</p>
-                <button>Order Now</button>
+    <!-- BACKGROUND AMBIENT GLOWS -->
+    <div class="ambient-glow glow-top" aria-hidden="true"></div>
+    <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+    <!-- NAVIGATION HEADER -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">☕</span>
+                <span class="logo-text">Brew Haven<span class="logo-dot">.</span></span>
+            </a>
+
+            <!-- Pure CSS Mobile Menu Checkbox Toggle -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu button">
+                <span class="hamburger"></span>
+            </label>
+
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#hours" class="nav-link">Happy Hours</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-
+                link">Contact</a>
+                <a href="#menu" class="btn btn-nav">Order Now</a>
             </div>
-            <div class="card">
-                <img src="latte.jpg" alt="">
-                <h3>Latte</h3>
-                <p>A smooth blend of rich espresso and creamy steamed milk.</p>
-                <button>Order Now</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="home">
+            <div class="hero-backdrop"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-sparkle">✦</span>
+                        <span>Artisanal Coffee &amp; Handcrafted Roastery</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Where Every Sip Feels Like <span class="gradient-text">Pure Luxury</span>
+                    </h1>
+                    <p class="hero-description">
+                        Start your day with rich aromas, handcrafted brews, and moments worth savoring. 
+                        Carefully sourced from sustainable high-altitude estates and freshly roasted in small batches daily.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="#menu" class="btn btn-primary">
+                            <span>Explore Our Menu</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+                        <a href="#about" class="btn btn-outline">
+                            <span>Our Story</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Organic Arabica</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">18+</span>
+                            <span class="stat-label">Roasting Profiles</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.9 ★</span>
+                            <span class="stat-label">Customer Rating</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-card-frame">
+                        <img src="images/coffenew.jpg" alt="Fresh artisan coffee beans and pour-over" class="hero-img">
+                        <div class="floating-badge badge-top">
+                            <span class="badge-icon">☕</span>
+                            <div class="badge-text">
+                                <strong>Freshly Roasted</strong>
+                                <small>Small Batch Only</small>
+                            </div>
+                        </div>
+                        <div class="floating-badge badge-bottom">
+                            <span class="badge-icon">🌿</span>
+                            <div class="badge-text">
+                                <strong>100% Sustainable</strong>
+                                <small>Direct Fair Trade</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <img src="coffee wallpaper.jpg" alt="">
-                <h3>Cold Brew</h3>
-                <p>Freshly brewed from premium beans for a rich & aromatic taste</p>
-                <button>Order Now</button>
+        </section>
+
+        <!-- WHY CHOOSE US / ABOUT SECTION -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text-col">
+                        <div class="section-tag" id="why">Why Choose Us</div>
+                        <h2 class="section-title">
+                            Crafted With Passion, <br>
+                            <span class="gradient-text">Brewed To Perfection</span>
+                        </h2>
+                        <p class="section-description">
+                            At Brew Haven, every cup is crafted with passion using carefully selected premium coffee beans. 
+                            From rich espressos to creamy lattes, we are committed to delivering exceptional flavor and quality.
+                        </p>
+                        <p class="section-description">
+                            Whether you're starting your morning rush or taking a relaxing break, our cozy atmosphere, warm lighting, 
+                            and friendly service make every visit a truly memorable sensory experience.
+                        </p>
+
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">✨</div>
+                                <div class="feature-info">
+                                    <h4>Hand-Selected Beans</h4>
+                                    <p>Only the finest top-tier beans from certified ethical micro-farms worldwide.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">👨‍🍳</div>
+                                <div class="feature-info">
+                                    <h4>Master Baristas</h4>
+                                    <p>Every pour, pull, and steam is tuned to bring out rich, nuanced tasting notes.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">🛋️</div>
+                                <div class="feature-info">
+                                    <h4>Warm, Cozy Ambiance</h4>
+                                    <p>Relaxing acoustic atmosphere, welcoming lounge seats, and fast fiber Wi-Fi.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-action">
+                            <a href="#contact" class="btn btn-primary">
+                                <span>Visit Us Today</span>
+                                <span class="btn-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="about-image-col">
+                        <div class="image-wrapper">
+                            <img src="images/coffeebrew.jpg" alt="Artisan brewing coffee in glass carafe" class="about-img">
+                            <div class="image-overlay-card">
+                                <div class="steam-container" aria-hidden="true">
+                                    <div class="steam steam-1"></div>
+                                    <div class="steam steam-2"></div>
+                                    <div class="steam steam-3"></div>
+                                </div>
+                                <div class="overlay-rating">★★★★★</div>
+                                <h4>Artisanal Pour-Over</h4>
+                                <p>Extracted at precise 93°C temperature for maximum velvet smoothness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card" id="Gallery">
-                <img src="matcha.jpg" alt="">
-                <h3>Matcha</h3>
-                <p>Creamy blend of premium match & milk with naturally sweet flavor</p>
-                <button>Order Now</button>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section class="section menu-section" id="menu">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag" id="Gallery">Handcrafted Selections</div>
+                    <h2 class="section-title">Explore Our Signature Drinks</h2>
+                    <p class="section-subtitle">
+                        Made from ethically sourced beans and ceremonial ingredients, crafted fresh on order.
+                    </p>
+                </div>
+
+                <div class="menu-grid">
+                    <!-- Card 1: Espresso -->
+                    <article class="coffee-card">
+                        <div class="card-image-box">
+                            <img src="images/espresso.jpg" alt="Freshly extracted double espresso with golden crema">
+                            <span class="card-chip">Classic Roast</span>
+                            <span class="card-price">$3.90</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-val">4.9 (420+)</span>
+                            </div>
+                            <h3 class="card-title">Espresso Intenso</h3>
+                            <p class="card-description">
+                                Rich, full-bodied coffee extracted from single-origin dark roasted beans with dense caramel crema.
+                            </p>
+                            <div class="card-footer">
+                                <span class="flavor-tag">Dark Cocoa · Hazelnut</span>
+                                <a href="#contact" class="btn btn-sm btn-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Latte -->
+                    <article class="coffee-card">
+                        <div class="card-image-box">
+                            <img src="images/latte.jpg" alt="Creamy cafe latte with artisanal heart microfoam art">
+                            <span class="card-chip chip-popular">Popular</span>
+                            <span class="card-price">$4.80</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-val">5.0 (680+)</span>
+                            </div>
+                            <h3 class="card-title">Velvet Caffe Latte</h3>
+                            <p class="card-description">
+                                A smooth harmonious blend of rich espresso and creamy microfoam steamed milk with silky latte art.
+                            </p>
+                            <div class="card-footer">
+                                <span class="flavor-tag">Vanilla · Sweet Cream</span>
+                                <a href="#contact" class="btn btn-sm btn-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Cold Brew -->
+                    <article class="coffee-card">
+                        <div class="card-image-box">
+                            <img src="images/coffee.jpg" alt="Signature iced cold brew coffee in a crystal glass">
+                            <span class="card-chip">House Special</span>
+                            <span class="card-price">$4.50</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-val">4.8 (310+)</span>
+                            </div>
+                            <h3 class="card-title">Artisan Cold Brew</h3>
+                            <p class="card-description">
+                                Steeped for 20 hours from premium mountain beans for an ultra-smooth, low-acidity refreshing taste.
+                            </p>
+                            <div class="card-footer">
+                                <span class="flavor-tag">Brown Sugar · Crisp Citrus</span>
+                                <a href="#contact" class="btn btn-sm btn-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Matcha -->
+                    <article class="coffee-card">
+                        <div class="card-image-box">
+                            <img src="images/matcha.jpg" alt="Ceremonial grade green matcha latte with foam">
+                            <span class="card-chip chip-wellness">Wellness</span>
+                            <span class="card-price">$5.20</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-val">4.9 (290+)</span>
+                            </div>
+                            <h3 class="card-title">Ceremonial Matcha</h3>
+                            <p class="card-description">
+                                Creamy blend of first-harvest organic matcha and steamed milk with a naturally sweet, earthy flavor.
+                            </p>
+                            <div class="card-footer">
+                                <span class="flavor-tag">Uji Matcha · Oat Milk</span>
+                                <a href="#contact" class="btn btn-sm btn-primary">Order Now</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- HAPPY HOURS & REVIEWS SECTION -->
+        <section class="section experience-section" id="reviews">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag" id="hours">Guest Experience &amp; Specials</div>
+                    <h2 class="section-title">Moments That Warm The Soul</h2>
+                    <p class="section-subtitle">
+                        Discover daily specials and stories shared by our passionate coffee community.
+                    </p>
+                </div>
+
+                <div class="experience-grid">
+                    <!-- Morning Happy Hours Card -->
+                    <div class="feature-card happy-hours-card">
+                        <div class="card-banner">
+                            <span class="badge-clock">⏰ 7:00 AM – 10:00 AM Daily</span>
+                            <span class="badge-discount">20% Off Pastries</span>
+                        </div>
+                        <h3 class="feature-card-title">Morning Happy Hours</h3>
+                        <p class="feature-card-text">
+                            Start your day with the perfect cup of coffee at Brew Haven. Our Morning Happy Hours are designed 
+                            to make every morning brighter. Enjoy freshly brewed coffee made from premium-quality beans. Pair 
+                            your favorite drink with our warm and delicious French butter croissants and pastries.
+                        </p>
+                        <p class="feature-card-text">
+                            Relax in a cozy atmosphere before work or school. Share memorable moments with friends and family over 
+                            coffee, and take advantage of our special morning discounts every single day.
+                        </p>
+                        <div class="perks-row">
+                            <span class="perk-pill">🥐 Fresh Bakery</span>
+                            <span class="perk-pill">⚡ Fast Barista Line</span>
+                            <span class="perk-pill">☕ Free Extra Shot</span>
+                        </div>
+                    </div>
+
+                    <!-- Reviews / Experience Card -->
+                    <div class="feature-card testimonial-card">
+                        <div class="quote-mark">“</div>
+                        <div class="review-stars">★★★★★</div>
+                        <h3 class="feature-card-title">A Perfect Coffee Experience</h3>
+                        <p class="feature-card-text quote-text">
+                            At Brew Haven, every cup is prepared with passion and care. We carefully select the finest coffee beans 
+                            for every brew. Our skilled baristas create drinks that satisfy every taste—from creamy lattes to bold 
+                            espressos. Whether you're working or relaxing, we have the perfect warm space.
+                        </p>
+                        <div class="author-block">
+                            <div class="author-avatar">SC</div>
+                            <div class="author-info">
+                                <strong>Sophia Caldwell</strong>
+                                <span>Verified Customer &amp; Local Artist</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Showcase Visual Card -->
+                    <div class="coffee-showcase-card">
+                        <div class="showcase-img-box">
+                            <img src="images/coffee.jpg" alt="Rich brewed artisan coffee in glass mug" class="showcase-img">
+                            <div class="steam-cup" aria-hidden="true">
+                                <div class="steam-line steam-a"></div>
+                                <div class="steam-line steam-b"></div>
+                                <div class="steam-line steam-c"></div>
+                            </div>
+                        </div>
+                        <div class="showcase-caption">
+                            <h4>Handcrafted Every Morning</h4>
+                            <p>Every sip is crafted to bring comfort, warmth, and quiet luxury.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISIT & CONTACT SECTION -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-card">
+                    <div class="contact-info-col">
+                        <div class="section-tag">Visit Brew Haven</div>
+                        <h2 class="contact-title">We’d Love To Welcome You</h2>
+                        <p class="contact-desc">
+                            Drop in for a freshly pulled espresso, an afternoon workspace session, or pick up fresh roasted beans to brew at home.
+                        </p>
+
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="info-icon">📍</span>
+                                <div>
+                                    <strong>Our Roastery &amp; Cafe</strong>
+                                    <p>42 Artisanal Avenue, Historic Coffee District</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">🕒</span>
+                                <div>
+                                    <strong>Opening Hours</strong>
+                                    <p>Monday – Friday: 06:30 AM – 09:00 PM<br>Saturday – Sunday: 07:30 AM – 10:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">📞</span>
+                                <div>
+                                    <strong>Direct Orders &amp; Inquiries</strong>
+                                    <p>+1 (555) 782-2739 · hello@brewhaven.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-col">
+                        <form class="contact-form" action="#contact" method="get">
+                            <h3 class="form-title">Reserve A Table or Inquire</h3>
+                            <div class="form-group">
+                                <label for="guest-name">Your Full Name</label>
+                                <input type="text" id="guest-name" placeholder="e.g. Alexander Brooks" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guest-email">Email Address</label>
+                                <input type="email" id="guest-email" placeholder="e.g. alex@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guest-pref">Favorite Drink or Occasion</label>
+                                <select id="guest-pref">
+                                    <option value="table">Table for 2-4 Persons</option>
+                                    <option value="espresso">Specialty Espresso Tasting</option>
+                                    <option value="happyhour">Morning Happy Hour Booking</option>
+                                    <option value="beans">Whole Bean Wholesale Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guest-notes">Special Requests</label>
+                                <textarea id="guest-notes" rows="3" placeholder="Tell us about dietary preferences, table requests, or questions..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span>Send Reservation Request</span>
+                                <span class="btn-arrow">→</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-icon">☕</span>
+                    <span class="logo-text">Brew Haven<span class="logo-dot">.</span></span>
+                </a>
+                <p class="footer-tagline">
+                    Handcrafting small-batch roasts and luxury coffee experiences every day. Where community, comfort, and flavor meet.
+                </p>
+                <div class="social-links">
+                    <a href="#home" class="social-link" title="Instagram">Instagram</a>
+                    <a href="#home" class="social-link" title="Facebook">Facebook</a>
+                    <a href="#home" class="social-link" title="X (Twitter)">Twitter</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Our Roastery</a></li>
+                    <li><a href="#menu">Handcrafted Menu</a></li>
+                    <li><a href="#hours">Happy Hours &amp; Specials</a></li>
+                    <li><a href="#reviews">Customer Stories</a></li>
+                    <li><a href="#contact">Contact &amp; Reservations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Specialty Brews</h4>
+                <ul class="footer-links">
+                    <li><a href="#menu">Single-Origin Espresso</a></li>
+                    <li><a href="#menu">Velvet Caffe Latte</a></li>
+                    <li><a href="#menu">Slow-Steeped Cold Brew</a></li>
+                    <li><a href="#menu">Ceremonial Uji Matcha</a></li>
+                    <li><a href="#menu">Pastries &amp; Savory Bites</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-heading">Fresh Roast Updates</h4>
+                <p class="footer-text">Subscribe to receive exclusive morning discounts, secret tasting events, and brewing tips.</p>
+                <form class="newsletter-form" action="#home" method="get">
+                    <input type="email" placeholder="Enter your email" required aria-label="Email address for newsletter">
+                    <button type="submit" class="btn btn-sm btn-primary">Join</button>
+                </form>
             </div>
         </div>
-    </section>
-    <section class="review" id="Reviews">
-        <div class="rev">
-            <h3>Morning Happy Hours</h3>
-            <p>Start your day with the perfect cup of coffee at Brew Haven. Our Morning Happy Hours are designed to make
-                every morning brighter. Enjoy freshly brewed coffee made from premium-quality beans. Pair your favorite
-                drink with our warm and delicious pastries. Relax in a cozy atmosphere before work or school. Share
-                memorable moments with friends and family over coffee. Take advantage of our special morning discounts
-                every day. Experience rich flavors and exceptional customer service. Every sip is crafted to bring
-                comfort and happiness. Visit us and make your mornings truly unforgettable.</p>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>© 2026 Brew Haven Cafe &amp; Roastery. All rights reserved.</p>
+                <p class="footer-note">Handcrafted with pure HTML &amp; CSS.</p>
+            </div>
         </div>
-        <div class="rev" id="contact">
-            <h3>A Perfect Coffee Experience</h3>
-            <p>At Brew Haven, every cup is prepared with passion and care. We carefully select the finest coffee beans
-                for every brew. Our skilled baristas create drinks that satisfy every taste. From creamy lattes to bold
-                espressos, there's something for everyone. Enjoy a warm and welcoming environment all day long. Whether
-                you're working or relaxing, we have the perfect space. Fresh ingredients ensure every drink is rich and
-                flavorful. Our friendly team is always ready to serve you with a smile. We believe coffee is more than a
-                drink—it's an experience. Come and discover the taste that keeps our customers coming back.</p>
-        </div>
-        <div class="coffee"> <img src="coffee.jpg" alt=""> </div>
-    </section>
+    </footer>
 </body>
+</html>
